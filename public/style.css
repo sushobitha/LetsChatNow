@@ -1,0 +1,250 @@
+.logo{
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html,
+ body {
+    height: 100%;
+ }
+ html {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #5aad52 0%,#0a481708 100%);
+    font-size: 10px;
+ }
+
+#chat-container{
+    font-size: 14px;
+    background-color: rgba(18, 36, 16, 0.4);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.7);
+    overflow-y: scroll;
+    padding: 15px;
+    position: relative;
+    width: 500px;
+    max-width: 100%;
+    height: 80%;
+    margin: auto;
+}
+
+.left{
+    background-color: rgba(100, 150, 39, 0.9);
+    color: rgb(39, 65, 39);
+}
+
+.right{
+    background-color: rgba(55, 74, 33, 0.9);
+    color: rgb(160, 177, 162);
+}
+
+.message{
+  word-break: break-word;
+  float: left;
+  clear: left;
+  padding-left: 40px;
+  padding-top: 10px;
+  text-align: left;
+}
+
+.notify{
+  font-size: 12px; 
+  text-align: center;
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+  margin: auto;
+  margin-bottom: 20px;
+  max-width: 50%;
+  width: 50%;
+  clear: both;
+  border-radius: 50px;
+}
+
+.joined{
+    background-color: #4f9c4f;
+    color: rgb(2, 2, 2);
+}
+
+.leftChat{
+    background-color: rgb(108 99 95);    
+    color: white;
+}
+
+.user{
+  font-size: 16px;
+  color: #dae8da;
+  border-radius: 5px;
+  margin-top: -29px;
+  width: max-content;
+  font-size: 16px;
+}
+
+.user.right{
+  float: right;
+  padding-right: 40px;
+  padding-left: 10px;
+}
+
+.user.left{
+  float: left;
+  padding-left: 40px;
+  padding-right: 10px;
+}
+.chat{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  clear: both;
+  border-radius: 20px;
+  box-shadow: 0px 15px 5px 0px rgba(55, 76, 23, 0.5);
+  position: relative;
+
+}
+
+.chat:after {
+  bottom: 100%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-bottom-color: green;
+  border-width: 10px;
+  margin-left: -10px;
+}
+
+.chat-left:after {
+  left: 20%;
+  border-bottom-color: rgba(100, 150, 39, 0.9);
+}
+
+.chat-right:after {
+  right: 20%;
+  border-bottom-color: rgba(55, 74, 33, 0.9);
+}
+
+
+.message.left {
+    padding: 15px 70px 15px 20px
+}
+
+.message.right {
+    padding: 15px 70px 15px 20px
+}
+
+
+.left{
+    float: left;
+    clear: both;
+}
+
+.right{
+    float: right;
+    clear: both;
+}
+
+#msgInput{
+    width: 50%;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.form-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#send-container{
+    display: flex;
+    margin: 10px;
+    width: 100%;
+    justify-content: center;
+}
+
+/* Full-width textarea */
+#send-container input {
+    width: 300px;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 50px;
+  }
+  
+  /* When the textarea gets focus, do something */
+  #send-container input:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /* Set a style for the submit/login button */
+  #send-container .btn {
+    background-color: #1d3e17;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  #send-container .cancel {
+    background-color: rgb(9, 112, 47);
+  }
+  
+  /* Add some hover effects to buttons */
+  #send-container .btn:hover {
+    opacity: 1;
+  }
+
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(11, 61, 22); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(15, 85, 30); 
+  }
+
+  .time{
+    font-size: 10px;
+    bottom: 0;
+    right: 0;
+    float: right;
+    clear: left;
+    padding: 10px 20px;
+  }
+
+  .welcome{
+    color: #272323;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+
+    width: 50%;
+  clear: both;
+  border-radius: 50px;
+  box-shadow: 0px 15px 5px 0px rgba(55, 76, 23, 0.5);
+  position: relative;
+  }
